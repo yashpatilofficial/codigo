@@ -1,13 +1,12 @@
-#include<iostream>
+#include<iostream> // input output services
 using namespace std; 
 int main()
 {
-	cout<<"enter the number"<<endl;
-	int num;
-	cin>>num;
-	int rem,temp,sum=0;
+	cout<<"enter the number"<<endl; //printing instructions
+	int num,rem,temp,sum=0; // initialising required var
+	cin>>num; // taking input of num
 	temp=num;
-	while(num>0)
+	while(num>0) //logic for Armstrong
 	{
 		rem=num%10;
 		sum=sum+rem*rem*rem;
